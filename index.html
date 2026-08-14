@@ -1,12 +1,13 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Shafi Al Hasan | Graphic Designer</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -14,23 +15,41 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#0f172a;
     color:white;
+    line-height:1.6;
 }
 
 header{
-    text-align:center;
-    padding:80px 20px;
     background:linear-gradient(135deg,#111827,#1e293b);
+    padding:80px 20px;
 }
 
-header h1{
-    font-size:60px;
+.hero{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.profile-img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #facc15;
+}
+
+.hero-text h1{
+    font-size:55px;
     color:#facc15;
 }
 
-header p{
+.hero-text p{
     font-size:24px;
     margin-top:10px;
 }
@@ -46,10 +65,14 @@ header p{
     font-weight:bold;
 }
 
+.btn:hover{
+    opacity:.9;
+}
+
 section{
-    padding:60px 20px;
     max-width:1100px;
     margin:auto;
+    padding:70px 20px;
 }
 
 h2{
@@ -58,84 +81,163 @@ h2{
 }
 
 .about p{
-    line-height:1.8;
+    max-width:800px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:10px 15px;
+    border-radius:8px;
 }
 
 .portfolio{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
 }
 
 .portfolio img{
     width:100%;
-    border-radius:10px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.portfolio img:hover{
+    transform:scale(1.03);
 }
 
 .contact{
     text-align:center;
 }
 
+.contact a{
+    color:#facc15;
+    text-decoration:none;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    color:#facc15;
+    text-decoration:none;
+    margin:0 10px;
+}
+
 footer{
     text-align:center;
-    padding:20px;
     background:#111827;
+    padding:25px;
+    margin-top:40px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Shafi Al Hasan</h1>
-    <p>Graphic Designer</p>
-    <a href="#portfolio" class="btn">View My Work</a>
+
+<div class="hero">
+
+<img src="profile.png" alt="Shafi Al Hasan" class="profile-img">
+
+<div class="hero-text">
+<h1>Shafi Al Hasan</h1>
+<p>Graphic Designer</p>
+
+<a href="#portfolio" class="btn">
+View My Work
+</a>
+
+</div>
+</div>
+
 </header>
 
 <section class="about">
-    <h2>About Me</h2>
-    <p>
-        Hello! I'm Shafi Al Hasan, a passionate Graphic Designer.
-        I create eye-catching social media posts, posters, branding,
-        logos and visual content that help businesses grow and stand out.
-    </p>
+
+<h2>About Me</h2>
+
+<p>
+Hello! I'm Shafi Al Hasan, a passionate Graphic Designer from Bangladesh.
+I specialize in Social Media Design, Posters, Branding, Logo Design and
+Creative Marketing Materials. My goal is to create attractive visuals that
+help businesses grow and stand out.
+</p>
+
 </section>
 
 <section>
-    <h2>My Skills</h2>
-    <p>Adobe Photoshop • Adobe Illustrator • Branding • Social Media Design • Poster Design</p>
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Adobe Photoshop</div>
+<div class="skill">Adobe Illustrator</div>
+<div class="skill">Logo Design</div>
+<div class="skill">Brand Identity</div>
+<div class="skill">Social Media Design</div>
+<div class="skill">Poster Design</div>
+<div class="skill">Banner Design</div>
+
+</div>
+
 </section>
 
 <section id="portfolio">
-    <h2>My Portfolio</h2>
 
-    <div class="portfolio">
-        <img src="design.png" alt="Design Work">
-    </div>
+<h2>My Portfolio</h2>
+
+<div class="portfolio">
+
+<img src="design.png" alt="Design 1">
+
+</div>
+
 </section>
 
 <section class="contact">
-    <h2>Contact Me</h2>
 
-<p>Email:
-    <a href="mailto:shafialhasan32@gmail.com">
-        shafialhasan32@gmail.com
-    </a>
+<h2>Contact Me</h2>
 
-<p>Phone: +01957954481</p>
+<p>
+Email:
+<a href="mailto:shafialhasan32@gmail.com">
+shafialhasan32@gmail.com
+</a>
+</p>
+
+<p>Phone: +8801957954481</p>
 
 <p>Location: Dhaka, Bangladesh</p>
-<p>Location: Dhaka, Bangladesh</p>
+
+<div class="social">
+
+<a href="#">Facebook</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">Behance</a>
+
+</div>
 
 </section>
 
 <footer>
 
-<footer>
-    © 2025 Shafi Al Hasan | Graphic Designer
+© 2025 Shafi Al Hasan | Graphic Designer
+
 </footer>
 
 </body>
 </html>
-```
 
